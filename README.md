@@ -1,2 +1,4 @@
 # FPL-Project
 Full Stack Application simulating an FPL Season using Java, Spring, and React.js
+
+Description: As an avid player of Fantasy Premier League draft with my friends and my favorite sport being soccer I wanted to make my first full-stack project to be related to these topics. This project will allow the user to set up their own league by entering the league information and team name, as well as the number of CPUs that they would like to play against. From there they can draft there own team with a money limit, and once this is done the remaining teams draft their players without a money left. This project is also partially an experiment to see which version of Fantasy Premier League would result in teams with more points. From there a 38 game FPL season is simulated and the results are outputted.
