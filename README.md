@@ -8,9 +8,14 @@ Description: As an avid player of the Fantasy Premier League draft with my frien
 1. Download MySQL Community Server and MySQL Workbench.
 2. Setup tables in MySQL Workbench using the sql file found in ./back-end/target/classes/SQL-Queries
 3. Download eclipse and run the backend portion of the project in eclipse. Ensure you have are using JDK 8 and if not download JDK 8 from oracle archive.
-4. Populate the player tables using the player.csv and postman collection in the directory.
+4. Run the project in eclipse as a maven project.
+5. Import postman collection provided in the directory.
+6. Populate the player tables using the player.csv file and POST method "File-Upload" in the Player directory. Include csv as form-data with key "file."
 
 # Frontend Setup
 1. Put the front-end portion of the project into your favorite editor.
 2. Run npm-install to install all node_modules.
 3. Run npm-start.
+
+# Running Project
+Ensure that both the front-end is running and the backend is running using the instructions provided above otherwise it will not work.
