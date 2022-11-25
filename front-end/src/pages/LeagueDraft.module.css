@@ -1,0 +1,56 @@
+.inputMoney {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 97.5%;
+}
+.inputMoney input {
+    border: solid black;
+    font-size: 24px;
+}
+.inputMoney h2 {
+    border: solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+.draft input {
+    margin-bottom: 2em;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+}
+.draft h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+.draft table th, td, tr {
+    border: 1px solid;
+}
+.container {
+    display: flex;
+    justify-content: space-around;   
+}
+.table1 {
+    border: solid;
+    flex-basis: 60%;
+    overflow-y: scroll;
+    width: fit-content;
+    height: 500px;
+}
+.table1 table {
+    width: 100%;
+}
+.table td, tr {
+    text-align: center;
+}
+
+.buttoncontainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttoncontainer .button {
+    width: 30%;
+}
+

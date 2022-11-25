@@ -1,0 +1,15 @@
+.description {
+    text-align: center;
+
+  }
+  .description h1 {
+    text-decoration: underline;
+  }
+  .description p {
+    border: solid;
+    margin-left: 20%;
+    margin-right: 20%;;
+    border-radius: 14px;
+    padding: 1rem;
+    margin-bottom: 20px;
+  }

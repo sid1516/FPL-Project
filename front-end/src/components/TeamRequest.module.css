@@ -1,0 +1,11 @@
+.teamRequest {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.teamRequest label, input {
+    display: block;
+    margin: auto;
+}
+.teamRequest label {
+    margin: 0.5em 0;
+}

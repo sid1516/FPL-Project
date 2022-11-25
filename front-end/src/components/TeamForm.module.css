@@ -1,0 +1,11 @@
+.team-form {
+    text-align: center;
+}
+
+.title {
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+.my-team label {
+    margin: 0.5em 10px;
+}

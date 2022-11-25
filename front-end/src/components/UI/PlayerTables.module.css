@@ -1,0 +1,20 @@
+.tables{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex-basis: 20%;
+    border: solid;
+    border-radius: 10px;
+    height: 20%;
+}
+.playersList {
+    list-style: none;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.playersList ul {
+    font-size: 18px;
+    text-decoration: none;
+}
