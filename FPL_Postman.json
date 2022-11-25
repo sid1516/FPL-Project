@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "b22cf011-5d8d-4e48-9261-8eac601ff3ee",
+		"name": "FPL Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "PostPlayer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Rakesh\", \n    \"lastName\" : \"Tangri\",\n    \"position\" : \"Center-Midfielder\",\n    \"price\" : 7,\n    \"seasonPoints\" : 210,\n    \"clubTeam\" : \"Manchester United\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/players",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Player by PlayerKey",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/players/fbe5e2b3-e675-4186-a8c6-96d74f8b0d4a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"fbe5e2b3-e675-4186-a8c6-96d74f8b0d4a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Player",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Rakesh\", \n    \"lastName\" : \"Tangri\",\n    \"position\" : \"Defender\",\n    \"price\" : 7,\n    \"seasonPoints\" : 210,\n    \"clubTeam\" : \"Manchester United\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/players/d1969918-3ea0-4fc5-b220-4c84732653da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"d1969918-3ea0-4fc5-b220-4c84732653da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Player",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/d1969918-3ea0-4fc5-b220-4c84732653da",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"d1969918-3ea0-4fc5-b220-4c84732653da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Team to Player",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/18f151d1-e684-41d3-bda9-ea57b7df0c0b/teams/1e59c774-cf2b-4771-8dfd-df3cd96567dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"18f151d1-e684-41d3-bda9-ea57b7df0c0b",
+								"teams",
+								"1e59c774-cf2b-4771-8dfd-df3cd96567dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Team From Player",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/players/ac8b92b2-5653-4517-a441-6ca23028f261/teams/11341205-8c74-4f99-811f-7fc265051421",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"ac8b92b2-5653-4517-a441-6ca23028f261",
+								"teams",
+								"11341205-8c74-4f99-811f-7fc265051421"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "File Upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/siddharthtangri/Downloads/PremierLeaguePlayers.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/players/csv/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"players",
+								"csv",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Post Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"teamName\" : \"Yeet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Teams",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Team By TeamKey",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams/6d536701-681a-4cb7-95ad-153baac1b8cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams",
+								"6d536701-681a-4cb7-95ad-153baac1b8cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams/6d536701-681a-4cb7-95ad-153baac1b8cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams",
+								"6d536701-681a-4cb7-95ad-153baac1b8cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add League To Team",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams/1e59c774-cf2b-4771-8dfd-df3cd96567dc/league/838524a9-fb98-4acc-9ba8-4f3a8f10a2f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams",
+								"1e59c774-cf2b-4771-8dfd-df3cd96567dc",
+								"league",
+								"838524a9-fb98-4acc-9ba8-4f3a8f10a2f8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete League From Team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/teams/1e59c774-cf2b-4771-8dfd-df3cd96567dc/league/838524a9-fb98-4acc-9ba8-4f3a8f10a2f8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"teams",
+								"1e59c774-cf2b-4771-8dfd-df3cd96567dc",
+								"league",
+								"838524a9-fb98-4acc-9ba8-4f3a8f10a2f8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "League",
+			"item": [
+				{
+					"name": "Post League",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"Dummy League\", \n    \"description\" : \"Testing league\",\n    \"teams\": [\n        {\n            \"teamName\" : \"Team1\"\n        },\n        {\n            \"teamName\" : \"Team2\"\n        },\n        {\n            \"teamName\" : \"Team3\"\n        },\n        {\n            \"teamName\" : \"Team4\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/league",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"league"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get League by LeagueKey",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/league/6d1b3db1-a5d0-4f42-9084-cf36f5f7cce7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"league",
+								"6d1b3db1-a5d0-4f42-9084-cf36f5f7cce7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Leagues",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/league",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"league"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Draft For League",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/league/807ab943-9d97-41ab-8c31-ea02d092b533/draft",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"league",
+								"807ab943-9d97-41ab-8c31-ea02d092b533",
+								"draft"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Schedule",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/league/807ab943-9d97-41ab-8c31-ea02d092b533/schedule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"league",
+								"807ab943-9d97-41ab-8c31-ea02d092b533",
+								"schedule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reset League",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/league/4025f69b-4436-4bd8-bc71-fe85cc743f1d/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"league",
+								"4025f69b-4436-4bd8-bc71-fe85cc743f1d",
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
