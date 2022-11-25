@@ -10,7 +10,7 @@ Description: As an avid player of the Fantasy Premier League draft with my frien
 3. Download eclipse and run the backend portion of the project in eclipse. Ensure you have are using JDK 8 and if not download JDK 8 from oracle archive.
 4. Populate the player tables using the player.csv and postman collection in the directory.
 
-#Frontend Setup
+# Frontend Setup
 1. Put the front-end portion of the project into your favorite editor.
 2. Run npm-install to install all node_modules.
 3. Run npm-start.
