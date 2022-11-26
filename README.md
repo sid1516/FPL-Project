@@ -18,4 +18,4 @@ Description: As an avid player of the Fantasy Premier League draft with my frien
 3. Run npm-start.
 
 # Running Project
-Ensure that both the front-end is running and the backend is running using the instructions provided above otherwise it will not work.
+Ensure that both the front-end is running and the backend is running using the instructions provided above.
